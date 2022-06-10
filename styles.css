@@ -13,7 +13,11 @@
 .normal{
     text-align: center;
 }
-.capture{
-    width:100px;
-    height:100px;
+.wowg-images{
+    max-width: 100vw;
+    display:flex;
+}
+img {
+    max-width:300px;
+    height:300px;
 }
