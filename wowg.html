@@ -10,6 +10,9 @@
 <body>
     <input type="text" placeholder="token no" id="token_no"></form>
     <button id="btn1">Get images</button>
+    <div>
+        <img class="capture"></img>
+    </div>
 
     <script>
         const btn = document.getElementById('btn1');
@@ -23,8 +26,22 @@
             const final_no ="00000563027262832640";
             var number = Number(final_no)+Number(token_no);
             var url="https://media.10ktf.com/nfts/00000" + number + ".jpg";
-            
-            document.location.href = url;
+            const capture=document.getElementsByClassName('capture');
+            capture.src=url;
+            // document.location.href = url;
+
+            fetch(url)
+            .then(function (data) {
+                
+                console.log(data);
+                
+            })
+            // .then(data=> {
+            //     const capture=document.getElementsByClassName('capture');
+            //     capture.src=url; 
+            //     data.text();
+            //     console.log(data);
+            // })
         }
 
         btn.addEventListener('click', getUrl);
