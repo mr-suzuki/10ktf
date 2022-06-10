@@ -1,0 +1,15 @@
+* {
+    max-width: 100vw;
+}
+.title{
+    font-size: 2em;
+    text-align: center;
+}
+
+.container {
+    width:100%;
+    
+}
+.normal{
+    text-align: center;
+}
