@@ -8,7 +8,8 @@
 
 .container {
     width:100%;
-    margin: auto;
+    padding: 0 20%;
+    
 }
 .normal{
     text-align: center;
@@ -24,9 +25,13 @@
     justify-content: center;
     margin: 5vh 5vw;
 }
-img {
+#all-images img {
     max-width:320px;
     height:320px;
+}
+#shop {
+    width:60vw;
+    max-height: 60vh;
 }
 .topline{
     margin:3% auto;
