@@ -16,9 +16,16 @@
 }
 #parents_div{
     width:100%;
-    margin: 5% auto;
-    display: flex;
-    justify-content:space-around;
+    
+    display: block;
+    
+}
+.parent_collections{
+    text-align: center;
+}
+.parent_collections a{
+    color:black;
+    
 }
 #all-containers{
     display:flex;
