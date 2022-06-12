@@ -20,31 +20,32 @@
         
         function getUrl1 (){
             var token_no = document.getElementById("token_no").value;
-            const socks_no ="00000563027262832640";
+            const socks_no ="562949953421312";
             var socks_number = Number(socks_no)+Number(token_no);
             var socks_url="https://media.10ktf.com/nfts/00000" + socks_number + ".jpg";
 
-            const hoodie_no="1407452192964608";
+            const hoodie_no="1407374883553280";
             var hoodie_number=Number(hoodie_no)+Number(token_no);
             const hoodie_url="https://media.10ktf.com/nfts/0000"+hoodie_number+".jpg";
 
-            const snapback_no="844502239543296";
+            const snapback_no="844424930131968";
             var snapback_number=Number(snapback_no)+Number(token_no);
             const snapback_url="https://media.10ktf.com/nfts/00000"+snapback_number+".jpg";
 
-            const fivepanel_no="1125977216253952";
+            const fivepanel_no="1125899906842624";
             var fivepanel_number=Number(fivepanel_no)+Number(token_no);
             const fivepanel_url="https://media.10ktf.com/nfts/0000"+fivepanel_number+".jpg";
 
-            const catear_no="1688927169675264";
+            const catear_no="1688849860263936";
             var catear_number=Number(catear_no)+Number(token_no);
             const catear_url="https://media.10ktf.com/nfts/0000"+catear_number+".jpg";
 
-            const hightops_no="77309411328";
-            var hightops_number=Number(hightops_no)+Number(token_no);
-            const hightops_url="https://media.10ktf.com/nfts/000000000"+hightops_number+".jpg";
+            const hightops_no="0";
+            var this_no=('0000000000000000000' + token_no).slice(-19);
+            var hightops_number=Number(hightops_no)+this_no;
+            const hightops_url="https://media.10ktf.com/nfts/"+hightops_number+".jpg";
 
-            const backpack_no="281552286121984";
+            const backpack_no="281474976710656";
             var backpack_number=Number(backpack_no)+Number(token_no);
             const backpack_url="https://media.10ktf.com/nfts/00000"+backpack_number+".jpg";
             // const capture=document.getElementsByClassName('capture');
@@ -108,6 +109,8 @@
             .then(response => response.blob())
             .then(imageBlob => {
                 const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(this_no);
+                console.log(token_no);
                 console.log(imageObjectURL);
                 const image = document.createElement('img');
                 image.src=imageObjectURL;

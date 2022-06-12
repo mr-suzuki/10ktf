@@ -8,12 +8,17 @@
 
 .container {
     width:100%;
-    
+    margin: auto;
 }
 .normal{
     text-align: center;
 }
-
+#parents_div{
+    width:100%;
+    margin: 5% auto;
+    display: flex;
+    justify-content:space-around;
+}
 #all-containers{
     display:flex;
     justify-content: center;
@@ -24,6 +29,7 @@ img {
     height:320px;
 }
 .topline{
+    margin:3% auto;
     display: flex;
     justify-content: center;
 }
