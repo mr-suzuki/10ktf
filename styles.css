@@ -38,3 +38,12 @@
     display: flex;
     justify-content: center;
 }
+@media only screen and (max-width: 600px) {
+    #shop{
+        width:100%;
+        
+    }
+    .container{
+        padding: 0;
+    }
+  }
