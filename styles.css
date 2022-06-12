@@ -45,6 +45,9 @@
     display: flex;
     justify-content: center;
 }
+footer{
+    text-align: center;
+}
 @media only screen and (max-width: 600px) {
     #shop{
         width:100%;
