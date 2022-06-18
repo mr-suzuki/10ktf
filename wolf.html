@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Game Apparel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topline">
+        <input type="text" placeholder="put in the token number" id="token_no"></form>
+        <button id="btn1">Show me what Wagmi-san can craft!</button>
+    </div>
+    <div id="all-containers">
+        <div id="all-images"></div>
+    </div>
+    <script>
+        const btn1 = document.getElementById('btn1');
+        
+        function getUrl1 (){
+            var token_no = document.getElementById("token_no").value;
+            const socks_no ="563005787996160";
+            var socks_number = Number(socks_no)+Number(token_no);
+            var socks_url="https://media.10ktf.com/nfts/00000" + socks_number + ".jpg";
+
+            const hoodie_no="1407430718128128";
+            var hoodie_number=Number(hoodie_no)+Number(token_no);
+            const hoodie_url="https://media.10ktf.com/nfts/0000"+hoodie_number+".jpg";
+
+            const snapback_no="844480764706816";
+            var snapback_number=Number(snapback_no)+Number(token_no);
+            const snapback_url="https://media.10ktf.com/nfts/00000"+snapback_number+".jpg";
+
+            const fivepanel_no="1125955741417472";
+            var fivepanel_number=Number(fivepanel_no)+Number(token_no);
+            const fivepanel_url="https://media.10ktf.com/nfts/0000"+fivepanel_number+".jpg";
+
+            const catear_no="1688905694838784";
+            var catear_number=Number(catear_no)+Number(token_no);
+            const catear_url="https://media.10ktf.com/nfts/0000"+catear_number+".jpg";
+
+            const hightops_no="55834574848";
+            var hightops_number=Number(hightops_no)+Number(token_no);
+            const hightops_url="https://media.10ktf.com/nfts/000000000"+hightops_number+".jpg";
+
+            const backpack_no="281530811285504";
+            var backpack_number=Number(backpack_no)+Number(token_no);
+            const backpack_url="https://media.10ktf.com/nfts/00000"+backpack_number+".jpg";
+            // const capture=document.getElementsByClassName('capture');
+            // capture.src=url;
+            // document.location.href = url;
+            // window.open(url, '_blank');
+            fetch(socks_url)
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(imageObjectURL);
+                const image = document.createElement('img');
+                image.src=imageObjectURL;
+                const container = document.getElementById("all-images");
+                container.append(image);
+            });
+            
+            fetch(hoodie_url)
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(imageObjectURL);
+                const image = document.createElement('img');
+                image.src=imageObjectURL;
+                const container = document.getElementById("all-images");
+                container.append(image);
+            });
+
+            fetch(snapback_url)
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(imageObjectURL);
+                const image = document.createElement('img');
+                image.src=imageObjectURL;
+                const container = document.getElementById("all-images");
+                container.append(image);
+            });
+            
+            fetch(fivepanel_url)
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(imageObjectURL);
+                const image = document.createElement('img');
+                image.src=imageObjectURL;
+                const container = document.getElementById("all-images");
+                container.append(image);
+            });
+            fetch(catear_url)
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(imageObjectURL);
+                const image = document.createElement('img');
+                image.src=imageObjectURL;
+                const container = document.getElementById("all-images");
+                container.append(image);
+            });
+            fetch(hightops_url)
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(imageObjectURL);
+                const image = document.createElement('img');
+                image.src=imageObjectURL;
+                const container = document.getElementById("all-images");
+                container.append(image);
+            });
+            fetch(backpack_url)
+            .then(response => response.blob())
+            .then(imageBlob => {
+                const imageObjectURL = URL.createObjectURL(imageBlob);
+                console.log(imageObjectURL);
+                const image = document.createElement('img');
+                image.src=imageObjectURL;
+                const container = document.getElementById("all-images");
+                container.append(image);
+            });
+        }
+
+        btn1.addEventListener('click', getUrl1);
+    </script>
+</body>
+
+</html>
