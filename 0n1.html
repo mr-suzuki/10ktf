@@ -16,13 +16,14 @@
         <div id="all-images"></div>
     </div>
     <script>
+        
         const btn1 = document.getElementById('btn1');
         
         function getUrl1 (){
             var token_no = document.getElementById("token_no").value;
             const socks_no ="562992903094272";
             var socks_number = Number(socks_no)+Number(token_no);
-            var socks_url="https://media.10ktf.com/nfts/00000" + socks_number + ".jpg";
+            var socks_url=`"https://boiling-mountain-05126.herokuapp.com/https://media.10ktf.com/nfts/00000${socks_number}.jpg"`;
 
             const hoodie_no="1407417833226240";
             var hoodie_number=Number(hoodie_no)+Number(token_no);
@@ -34,7 +35,7 @@
 
             const fivepanel_no="1125942856515584";
             var fivepanel_number=Number(fivepanel_no)+Number(token_no);
-            const fivepanel_url="https://media.10ktf.com/nfts/0000"+fivepanel_number+".jpg";
+            const fivepanel_url="hhttps://media.10ktf.com/nfts/0000"+fivepanel_number+".jpg";
 
             const catear_no="1688892809936896";
             var catear_number=Number(catear_no)+Number(token_no);
